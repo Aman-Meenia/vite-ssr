@@ -18,7 +18,7 @@ const HowItWorks = () => {
       <div className="bg-[white] flex flex-col justify-between max-w-[1184px] md:flex-row md:items-center gap-8 px-5 md:px-[40px] md:mt-0 mx-auto md:mx-0 lg:mx-auto">
         <div className="w-full flex justify-center md:justify-start md:w-1/2">
           <img
-            src="/images/AboutUs/JivaSyncMobileLoginUi.png"
+            src="/images/AboutUs/JivaSyncMobileLoginUi.jpeg"
             alt="HowItWorks"
           />
         </div>

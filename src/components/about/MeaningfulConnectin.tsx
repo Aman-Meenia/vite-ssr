@@ -15,7 +15,7 @@ const MeaningfulConnection = () => {
             <div className="w-full md:w-[50%] h-[300px] sm:h-[300px] md:h-[500px] flex items-baseline justify-end align-bottom">
               <div className="flex items-end w-full h-full">
                 <img
-                  src="/images/AboutUs/AboutImg1.png"
+                  src="/images/AboutUs/AboutImg.png"
                   alt="CommunityEvents"
                   className="w-full h-full object-contain object-center"
                 />
@@ -64,7 +64,7 @@ const MeaningfulConnection = () => {
           {/* Our Vision Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 ">
             <div className="hidden md:flex w-full  justify-center md:justify-start">
-              <img src="/images/AboutUs/OurMission.svg" alt="CommunityEvents" />
+              <img src="/images/AboutUs/OurMission.jpg" alt="CommunityEvents" />
             </div>
             <div className="flex flex-col width-full items-center md:items-start">
               <p
