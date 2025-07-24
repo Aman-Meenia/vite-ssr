@@ -3,7 +3,7 @@
   "rewrites": [{ "source": "/(.*)", "destination": "/api/index.js" }],
   "functions": {
     "api/index.js": {
-      "includeFiles": "dist/client/**" // let SSR send static files
+      "includeFiles": "dist/client/**"
     }
   },
   "outputDirectory": "dist/client"
