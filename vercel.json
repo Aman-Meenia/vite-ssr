@@ -1,3 +1,10 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/index.js" }],
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "dist/client/**" // let SSR send static files
+    }
+  },
+  "outputDirectory": "dist/client"
 }
