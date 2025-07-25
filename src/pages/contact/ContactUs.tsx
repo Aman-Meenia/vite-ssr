@@ -2,10 +2,53 @@ import ContactUsImg from "/images/ContactUsPage.png";
 import Navbar from "@/components/Home/Navbar";
 import Footer from "@/components/Home/Footer";
 import ContactUsForm from "./ContactUsForm";
+import { Helmet } from "react-helmet-async";
 
 const ContactUs = () => {
   return (
     <>
+      <Helmet prioritizeSeoTags>
+        <title>Contact Us - JivaSync | Get In Touch</title>
+        <meta
+          name="description"
+          content="Get in touch with JivaSync for authentic, mindful, and event-driven matchmaking experiences. Contact us to learn more about meaningful connections and relationships."
+        />
+        <meta
+          name="keywords"
+          content="contact JivaSync, get in touch, matchmaking support, meaningful relationships, event-driven connections"
+        />
+        <link rel="canonical" href="https://vite-ssr-weld.vercel.app/contact" />
+
+        {/* Open Graph tags for social media */}
+        <meta property="og:title" content="Contact Us - JivaSync" />
+        <meta
+          property="og:description"
+          content="Get in touch with JivaSync for authentic matchmaking experiences and meaningful connections."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.yourwebsite.com/contact" />
+        <meta
+          property="og:image"
+          content="https://www.yourwebsite.com/images/ContactUsPage.png"
+        />
+
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us - JivaSync" />
+        <meta
+          name="twitter:description"
+          content="Get in touch with JivaSync for authentic matchmaking experiences."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.yourwebsite.com/images/ContactUsPage.png"
+        />
+
+        {/* Additional meta tags */}
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="JivaSync" />
+      </Helmet>
+
       <Navbar />
       <div className="mt-8 md:mt-16 pb-8 md:pb-16">
         <div className="pt-10 md:pt-10  md:pb-10 flex max-w-[1184px] flex-col gap-8 px-4 md:px-10  mx-auto ">
@@ -29,7 +72,7 @@ const ContactUs = () => {
                 <div className="relative w-[100%] h-full">
                   <img
                     src={ContactUsImg}
-                    alt="Sample image"
+                    alt="Contact JivaSync - Get in touch for meaningful connections"
                     className="w-full h-full object-cover"
                     style={{
                       borderImage:
